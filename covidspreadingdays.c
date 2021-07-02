@@ -23,7 +23,7 @@ int main(void){
             sumInfected+=infected;
             printf("Day %d   ==>   %d people are infected from Covid-19 pandemic started from 1 infected person------ percentage is %.3lf%% of new cases\n", days, (int)infected-1, (1-(infected)/sumInfected)*100);
       }
-            printf("\nFinally,  %d days are needed for %d of population to be infected from 1 infected person with Covid-19 disease with an R-index of %.2lf\nFurthermore, the infection growth is logarithmic.\n
+            printf("\nFinally,  %d days are needed for %d of population to be infected from 1 infected person with Covid-19 disease with an R-index of %.2lf.\nFurthermore, the infection growth is logarithmic.\n
 \n", days, population, rIndex);
 	return 0;
 }
