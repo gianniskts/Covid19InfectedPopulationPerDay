@@ -14,11 +14,14 @@ int main(void){
       int population=0, days=1, infected=1;
       double rIndex=0;
       scanf("%d %lf", &population, &rIndex);
-      printf("Day 1   ==>   1 person infected from Covid-19 pandemic\n");
+      printf("Day 1   ==>   1 person is infected from Covid-19 pandemic\n");
 // implementation
+      double sumInfected=0; // for percentage purposes
       while(infected<population){
             days++;
             infected += infected*rIndex;
-            printf("Day %d   ==>   %d people infected from Covid-19 pandemic\n", days, (int)infected);
+            sumInfected+=infected;
+            printf("Day %d   ==>   %d people are infected from Covid-19 pandemic ------ percentage is %.3lf%% of new cases\n", days, (int)infected-1, (1-(infected)/sumInfected)*100);
       }
+            printf("\nFinally,  %d days are needed for %d of population to be infected from Covid-19 disease with an R-index of %.2lf\n\n", days, population, rIndex);
 }
