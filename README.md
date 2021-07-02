@@ -51,6 +51,6 @@ Day 14   ==>   16816 people are infected from Covid-19 pandemic started from 1 i
 
 
 Finally,  14 days are needed for 10000 of population to be infected from 1 infected person with Covid-19 disease with an R-index of 1.16. 
-Furthermore, as we can see the infection growth is logarithmic.
+Furthermore, the infection growth is logarithmic.
 
 
